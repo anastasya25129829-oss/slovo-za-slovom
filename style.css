@@ -142,6 +142,9 @@ button:focus-visible {
   object-fit: contain;
 }
 
+/* Нечётное число тем: последняя плитка занимает всю строку */
+.theme:last-child:nth-child(odd) { grid-column: 1 / -1; }
+
 .theme span {
   font-size: 1.5rem;
   font-weight: 600;
@@ -343,7 +346,8 @@ button:focus-visible {
 }
 
 @media (min-width: 900px) {
-  .themes { grid-template-columns: repeat(4, 1fr); }
+  .themes { grid-template-columns: repeat(5, 1fr); }
+  .theme:last-child:nth-child(odd) { grid-column: auto; }
   .theme img { height: 170px; }
   .options[data-count="4"] { grid-template-columns: repeat(4, 1fr); }
 }

@@ -38,3 +38,13 @@
 табурет — https://images.unsplash.com/photo-1779278547541-370129cc09f7
 зеркало — из пособия «Подбери картинку» (Unsplash)
 комод — из пособия «Подбери картинку» (Unsplash)
+автобус — https://cdn.pixabay.com/photo/2016/03/04/16/24/bus-1236289_1280.jpg
+машина — https://cdn.pixabay.com/photo/2017/08/25/18/38/isolated-2681017_1280.png
+трамвай — https://cdn.pixabay.com/photo/2020/06/08/06/37/prague-5273285_1280.jpg, фон убран
+поезд — https://cdn.pixabay.com/photo/2020/05/17/08/58/intercity-5180635_1280.jpg, фон убран
+самолёт — https://cdn.pixabay.com/photo/2018/05/09/09/21/polish-airline-3384931_1280.png
+велосипед — https://cdn.pixabay.com/photo/2019/03/13/16/12/bicycle-4053192_1280.png
+корабль — https://cdn.pixabay.com/photo/2020/05/21/19/21/ship-5202244_1280.png
+вертолёт — https://cdn.pixabay.com/photo/2020/04/04/15/37/helicopter-5002794_1280.png
+мотоцикл — https://cdn.pixabay.com/photo/2022/06/01/16/10/motorcycle-7236104_1280.png
+трактор — https://cdn.pixabay.com/photo/2017/09/04/21/06/tractor-2715529_1280.png
