@@ -114,8 +114,10 @@
   function goHome() {
     clearNextTimer();
     el.status.textContent = "";
+    // Дата нужна только при входе в приложение, при возврате к темам её не показываем
+    el.today.hidden = true;
+    el.todayNote.hidden = true;
     show(el.home);
-    loadToday();
   }
 
   function deviceDateId(date) {
