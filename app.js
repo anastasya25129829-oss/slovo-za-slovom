@@ -250,4 +250,9 @@
 
   renderThemes();
   renderCount();
+
+  // Работа без интернета. Если файл открыт прямо с диска, браузер этого не умеет
+  if ("serviceWorker" in navigator && location.protocol !== "file:") {
+    navigator.serviceWorker.register("sw.js").catch(function () { /* приложение работает и без него */ });
+  }
 })();
