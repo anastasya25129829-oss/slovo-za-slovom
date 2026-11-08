@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1f3a7a">
+  <title>Слово за словом</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section id="screen-home" class="screen">
+    <header class="plate plate--home">
+      <h1 class="title">Слово за словом</h1>
+      <p class="hint">Выберите, сколько картинок показать, и нажмите тему.</p>
+    </header>
+
+    <main class="home">
+      <div class="count-block">
+        <h2 class="block-title" id="count-title">Картинок на экране</h2>
+        <div class="count" role="group" aria-labelledby="count-title">
+          <button type="button" class="count__btn" data-count="2">2</button>
+          <button type="button" class="count__btn" data-count="3">3</button>
+          <button type="button" class="count__btn" data-count="4">4</button>
+        </div>
+      </div>
+
+      <div id="themes" class="themes"></div>
+
+      <div class="backup">
+        <p class="backup__note">Приложение запоминает только число картинок. Занятия и ответы не сохраняются.</p>
+        <div class="backup__buttons">
+          <button type="button" id="backup-save" class="quiet">Скачать копию данных</button>
+          <button type="button" id="backup-load" class="quiet">Загрузить копию</button>
+          <input type="file" id="backup-file" class="visually-hidden" accept=".json,application/json" tabindex="-1" aria-hidden="true">
+        </div>
+        <p id="backup-status" class="backup__status" role="status"></p>
+      </div>
+    </main>
+  </section>
+
+  <section id="screen-task" class="screen screen--task" hidden>
+    <header class="plate plate--task">
+      <div class="plate__bar">
+        <button type="button" id="to-themes" class="on-plate">К темам</button>
+        <span id="counter" class="counter"></span>
+      </div>
+      <h1 id="word" class="word"></h1>
+    </header>
+
+    <div id="options" class="options"></div>
+
+    <div class="task-foot">
+      <button type="button" id="skip" class="quiet quiet--wide">Пропустить</button>
+    </div>
+  </section>
+
+  <section id="screen-praise" class="screen screen--praise" hidden>
+    <h1 id="praise" class="praise"></h1>
+    <div class="praise__buttons">
+      <button type="button" id="again" class="solid">Ещё раз</button>
+      <button type="button" id="other-theme" class="on-plate on-plate--big">Другая тема</button>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

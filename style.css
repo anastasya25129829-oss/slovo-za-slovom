@@ -1,0 +1,372 @@
+:root {
+  color-scheme: light;
+  --ink: #1f3a7a;
+  --ink-text: #ffffff;
+  --paper: #e6ecf5;
+  --tile: #ffffff;
+  --line: #c5d0e4;
+  --text: #16264d;
+  --muted: #47567a;
+  --right: #1b8457;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+html, body { margin: 0; padding: 0; }
+
+body {
+  background: var(--paper);
+  color: var(--text);
+  font-family: "Golos Text", "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  -webkit-text-size-adjust: 100%;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible {
+  outline: 4px solid #e0a100;
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* Плашка — главный элемент: как карточка, которую поднимают перед человеком */
+.plate {
+  background: var(--ink);
+  color: var(--ink-text);
+  padding: 20px 16px;
+  padding-top: max(20px, env(safe-area-inset-top));
+}
+
+.plate--home { padding-bottom: 24px; }
+
+.title {
+  margin: 0 auto;
+  max-width: 1100px;
+  font-size: clamp(2.5rem, 11vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.hint {
+  margin: 12px auto 0;
+  max-width: 1100px;
+  font-size: 1.25rem;
+}
+
+/* Главный экран */
+.home {
+  width: 100%;
+  max-width: 1132px;
+  margin: 0 auto;
+  padding: 20px 16px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.block-title {
+  margin: 0 0 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.count {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 420px;
+}
+
+.count__btn {
+  min-height: 64px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  background: var(--tile);
+  color: var(--ink);
+  border: 2px solid var(--line);
+  border-radius: 14px;
+}
+
+.count__btn[aria-pressed="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--ink-text);
+}
+
+.themes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.theme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 14px 8px 12px;
+  min-height: 170px;
+  background: var(--tile);
+  border: 2px solid var(--line);
+  border-radius: 16px;
+}
+
+.theme img {
+  width: 100%;
+  height: 108px;
+  object-fit: contain;
+}
+
+.theme span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.backup {
+  border-top: 2px solid var(--line);
+  padding-top: 16px;
+}
+
+.backup__note {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 1rem;
+  max-width: 60ch;
+}
+
+.backup__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.backup__status {
+  margin: 10px 0 0;
+  min-height: 1.4em;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.quiet {
+  min-height: 52px;
+  padding: 8px 18px;
+  background: transparent;
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  border-radius: 12px;
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+
+.quiet--wide {
+  width: 100%;
+  max-width: 420px;
+  min-height: 60px;
+  font-size: 1.25rem;
+}
+
+/* Задание */
+.screen--task {
+  height: 100vh;
+  height: 100dvh;
+}
+
+.plate--task {
+  flex: none;
+  padding-bottom: 18px;
+}
+
+.plate__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.on-plate {
+  min-height: 48px;
+  padding: 6px 16px;
+  background: transparent;
+  color: var(--ink-text);
+  border: 2px solid rgba(255, 255, 255, 0.65);
+  border-radius: 12px;
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+
+.counter { font-size: 1.0625rem; }
+
+.word {
+  margin: 10px 0 0;
+  text-align: center;
+  font-size: clamp(3rem, min(14vw, 13vh), 6.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.options {
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+}
+
+.options[data-count="4"] { grid-template-columns: repeat(2, 1fr); }
+
+.pick {
+  position: relative;
+  min-height: 0;
+  padding: 0;
+  background: var(--tile);
+  border: 2px solid var(--line);
+  border-radius: 16px;
+}
+
+/* Картинка лежит поверх кнопки, чтобы её размер не растягивал сетку */
+.pick img {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: calc(100% - 28px);
+  height: calc(100% - 28px);
+  object-fit: contain;
+}
+
+.pick.is-right {
+  border-color: var(--right);
+  outline: 8px solid var(--right);
+  outline-offset: -8px;
+}
+
+.pick.is-wrong { animation: sway 0.42s ease-in-out; }
+
+@keyframes sway {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(-1.6deg); }
+  70% { transform: rotate(1.2deg); }
+}
+
+@keyframes dim {
+  0%, 100% { opacity: 1; }
+  40% { opacity: 0.55; }
+}
+
+.task-foot {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  padding: 0 16px 12px;
+  padding-bottom: max(12px, env(safe-area-inset-bottom));
+}
+
+/* Похвала */
+.screen--praise {
+  background: var(--ink);
+  color: var(--ink-text);
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.praise {
+  margin: 0;
+  max-width: 14ch;
+  font-size: clamp(2.75rem, 11vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.12;
+}
+
+.praise__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 560px;
+}
+
+.praise__buttons button { flex: 1 1 220px; }
+
+.solid {
+  min-height: 68px;
+  padding: 8px 20px;
+  background: var(--ink-text);
+  color: var(--ink);
+  border: 2px solid var(--ink-text);
+  border-radius: 14px;
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+.on-plate--big {
+  min-height: 68px;
+  font-size: 1.375rem;
+  border-radius: 14px;
+}
+
+@media (min-width: 600px) {
+  .options[data-count="2"] { grid-template-columns: repeat(2, 1fr); }
+  .options[data-count="3"] { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .themes { grid-template-columns: repeat(4, 1fr); }
+  .theme img { height: 170px; }
+  .options[data-count="4"] { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Телефон, повёрнутый набок: экономим высоту */
+@media (max-height: 500px) {
+  .plate--task {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .word { margin: 0; flex: 1; }
+  .plate__bar { flex-direction: row-reverse; }
+  .options { padding-top: 8px; padding-bottom: 8px; }
+  .options[data-count="4"] { grid-template-columns: repeat(4, 1fr); }
+  .task-foot { padding-bottom: 8px; }
+  .quiet--wide { min-height: 48px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pick.is-wrong { animation: dim 0.42s linear; }
+}
