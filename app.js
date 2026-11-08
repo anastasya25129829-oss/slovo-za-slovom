@@ -11,6 +11,9 @@
 
   var PRAISE = ["Вы хорошо поработали!", "Хорошая работа!", "Отличное занятие!"];
 
+  var MONTHS = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
+  var WEEKDAYS = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
+
   var STORAGE_KEY = "slovo-za-slovom";
   var APP_ID = "slovo-za-slovom";
   var COUNTS = [2, 3, 4];
@@ -35,7 +38,9 @@
     skip: byId("skip"),
     praise: byId("praise"),
     status: byId("backup-status"),
-    file: byId("backup-file")
+    file: byId("backup-file"),
+    today: byId("today"),
+    todayNote: byId("today-note")
   };
 
   function byId(id) {
@@ -110,6 +115,46 @@
     clearNextTimer();
     el.status.textContent = "";
     show(el.home);
+    loadToday();
+  }
+
+  function deviceDateId(date) {
+    var month = String(date.getMonth() + 1);
+    var day = String(date.getDate());
+    return date.getFullYear() + "-" + (month.length < 2 ? "0" : "") + month + "-" + (day.length < 2 ? "0" : "") + day;
+  }
+
+  function deviceDateText(date) {
+    return WEEKDAYS[date.getDay()] + ", " + date.getDate() + " " + MONTHS[date.getMonth()] + " " + date.getFullYear() + " года";
+  }
+
+  function showToday(text, note) {
+    el.today.textContent = "Сегодня " + text;
+    el.todayNote.textContent = note;
+  }
+
+  function isValidToday(data) {
+    return Boolean(data) && typeof data.date === "string" && typeof data.text === "string" && typeof data.updated_text === "string";
+  }
+
+  // Сначала дата по часам устройства, чтобы строка не была пустой, пока идёт загрузка.
+  // Устаревшую дату из data.json не показываем: неверное число на занятии только запутает
+  function loadToday() {
+    var now = new Date();
+    showToday(deviceDateText(now), "");
+    fetch("data.json", { cache: "no-store" }).then(function (response) {
+      if (!response.ok) { throw new Error("data.json не загрузился"); }
+      return response.json();
+    }).then(function (data) {
+      if (!isValidToday(data)) { throw new Error("data.json не подошёл"); }
+      if (data.date === deviceDateId(now)) {
+        showToday(data.text, "Обновлено " + data.updated_text);
+      } else {
+        showToday(deviceDateText(now), "Дата по часам устройства. На сайте данные от " + data.updated_text + ".");
+      }
+    }).catch(function () {
+      showToday(deviceDateText(now), "Не удалось загрузить дату с сайта, показана дата по часам устройства.");
+    });
   }
 
   function startLesson(chosen) {
@@ -250,6 +295,7 @@
 
   renderThemes();
   renderCount();
+  loadToday();
 
   // Работа без интернета. Если файл открыт прямо с диска, браузер этого не умеет
   if ("serviceWorker" in navigator && location.protocol !== "file:") {

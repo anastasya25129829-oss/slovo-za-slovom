@@ -1,6 +1,6 @@
 // Работа без интернета: при установке все файлы приложения сохраняются на устройстве.
 // ПРИ КАЖДОЙ ВЫКЛАДКЕ ПОВЫШАЙ НОМЕР ВЕРСИИ, иначе телефон будет показывать старую версию.
-const VERSION = 3;
+const VERSION = 4;
 
 const PREFIX = "slovo-za-slovom-v";
 const CACHE = PREFIX + VERSION;
@@ -62,6 +62,21 @@ function fromFontCache(request) {
   });
 }
 
+// data.json меняется сам по расписанию: сначала спрашиваем сайт,
+// а без интернета отдаём последнюю сохранённую копию
+function freshFirst(request) {
+  return caches.open(CACHE).then(function (cache) {
+    return fetch(request).then(function (response) {
+      if (response.ok) { cache.put(request, response.clone()); }
+      return response;
+    }).catch(function () {
+      return cache.match(request).then(function (saved) {
+        return saved || Response.error();
+      });
+    });
+  });
+}
+
 self.addEventListener("fetch", function (event) {
   const request = event.request;
   if (request.method !== "GET") { return; }
@@ -72,6 +87,10 @@ self.addEventListener("fetch", function (event) {
     return;
   }
   if (url.origin !== self.location.origin) { return; }
+  if (url.pathname.endsWith("/data.json")) {
+    event.respondWith(freshFirst(request));
+    return;
+  }
 
   event.respondWith(
     caches.open(CACHE).then(function (cache) {
