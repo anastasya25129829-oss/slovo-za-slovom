@@ -164,7 +164,13 @@ button:focus-visible {
 .theme span {
   font-size: 1.5rem;
   font-weight: 600;
+  text-align: center;
+  line-height: 1.15;
 }
+
+.theme--long span { font-size: 1.125rem; }
+/* Если длинная тема стоит одна на всю строку, места хватает на обычный размер */
+.theme--long:last-child:nth-child(odd) span { font-size: 1.5rem; }
 
 .backup {
   border-top: 2px solid var(--line);
@@ -362,8 +368,9 @@ button:focus-visible {
 }
 
 @media (min-width: 900px) {
-  .themes { grid-template-columns: repeat(5, 1fr); }
+  .themes { grid-template-columns: repeat(4, 1fr); }
   .theme:last-child:nth-child(odd) { grid-column: auto; }
+  .theme--long:last-child:nth-child(odd) span { font-size: 1.125rem; }
   .theme img { height: 170px; }
   .options[data-count="4"] { grid-template-columns: repeat(4, 1fr); }
 }
