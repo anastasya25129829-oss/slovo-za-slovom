@@ -21,10 +21,18 @@
   <section id="screen-home" class="screen">
     <header class="plate plate--home">
       <h1 class="title">Слово за словом</h1>
-      <p class="hint">Выберите, сколько картинок показать, и нажмите тему.</p>
+      <p class="hint">Выберите задание, сколько вариантов показать, и нажмите тему.</p>
     </header>
 
     <main class="home">
+      <div class="mode-block">
+        <h2 class="block-title" id="mode-title">Задание</h2>
+        <div class="mode" role="group" aria-labelledby="mode-title">
+          <button type="button" class="mode__btn" data-mode="picture">Найди картинку</button>
+          <button type="button" class="mode__btn" data-mode="word">Картинка — слово</button>
+        </div>
+      </div>
+
       <div class="count-block">
         <h2 class="block-title" id="count-title">Картинок на экране</h2>
         <div class="count" role="group" aria-labelledby="count-title">
@@ -37,7 +45,7 @@
       <div id="themes" class="themes"></div>
 
       <div class="backup">
-        <p class="backup__note">Приложение запоминает только число картинок. Занятия и ответы не сохраняются.</p>
+        <p class="backup__note">Приложение запоминает только задание и число вариантов. Занятия и ответы не сохраняются.</p>
         <div class="backup__buttons">
           <button type="button" id="backup-save" class="quiet">Скачать копию данных</button>
           <button type="button" id="backup-load" class="quiet">Загрузить копию</button>
@@ -55,6 +63,7 @@
         <span id="counter" class="counter"></span>
       </div>
       <h1 id="word" class="word"></h1>
+      <div id="picture" class="picture" hidden><img id="picture-img" src="" alt=""></div>
     </header>
 
     <div id="options" class="options"></div>

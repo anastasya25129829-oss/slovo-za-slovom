@@ -18,9 +18,14 @@
   var APP_ID = "slovo-za-slovom";
   var COUNTS = [2, 3, 4];
   var DEFAULT_COUNT = 3;
+  // Задания: «picture» — слово сверху, выбрать картинку; «word» — картинка сверху, выбрать слово
+  var MODES = ["picture", "word"];
+  var DEFAULT_MODE = "picture";
   var NEXT_DELAY_MS = 1000;
 
-  var picturesCount = loadCount();
+  var saved = loadSettings();
+  var picturesCount = saved.picturesCount;
+  var mode = saved.mode;
   var theme = null;
   var queue = [];
   var position = 0;
@@ -33,6 +38,9 @@
     praiseScreen: byId("screen-praise"),
     themes: byId("themes"),
     word: byId("word"),
+    picture: byId("picture"),
+    pictureImg: byId("picture-img"),
+    countTitle: byId("count-title"),
     counter: byId("counter"),
     options: byId("options"),
     skip: byId("skip"),
@@ -64,27 +72,48 @@
     return COUNTS.indexOf(value) !== -1;
   }
 
-  // Браузер может запретить хранение (например, режим инкогнито) — тогда работаем без него
-  function loadCount() {
-    try {
-      var saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
-      if (saved && isValidCount(saved.picturesCount)) {
-        return saved.picturesCount;
-      }
-    } catch (e) { /* остаётся значение по умолчанию */ }
-    return DEFAULT_COUNT;
+  function isValidMode(value) {
+    return MODES.indexOf(value) !== -1;
   }
 
-  function saveCount() {
+  // Браузер может запретить хранение (например, режим инкогнито) — тогда работаем без него
+  function loadSettings() {
+    var result = { picturesCount: DEFAULT_COUNT, mode: DEFAULT_MODE };
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify({ picturesCount: picturesCount }));
+      var stored = JSON.parse(localStorage.getItem(STORAGE_KEY));
+      if (stored && isValidCount(stored.picturesCount)) { result.picturesCount = stored.picturesCount; }
+      if (stored && isValidMode(stored.mode)) { result.mode = stored.mode; }
+    } catch (e) { /* остаются значения по умолчанию */ }
+    return result;
+  }
+
+  function saveSettings() {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ picturesCount: picturesCount, mode: mode }));
     } catch (e) { /* выбор действует до закрытия страницы */ }
   }
 
   function setCount(value) {
     picturesCount = value;
-    saveCount();
+    saveSettings();
     renderCount();
+  }
+
+  function setMode(value) {
+    mode = value;
+    saveSettings();
+    renderMode();
+  }
+
+  function modeName(value) {
+    return value === "word" ? "«Картинка — слово»" : "«Найди картинку»";
+  }
+
+  function renderMode() {
+    document.querySelectorAll(".mode__btn").forEach(function (button) {
+      button.setAttribute("aria-pressed", button.dataset.mode === mode ? "true" : "false");
+    });
+    el.countTitle.textContent = mode === "word" ? "Слов на экране" : "Картинок на экране";
   }
 
   function renderCount() {
@@ -132,22 +161,32 @@
     var others = shuffle(theme.words.filter(function (item) { return item !== word; }));
     var shown = shuffle([word].concat(others.slice(0, picturesCount - 1)));
 
+    var wordMode = mode === "word";
+
     el.word.textContent = word;
+    el.word.hidden = wordMode;
+    el.picture.hidden = !wordMode;
+    if (wordMode) { el.pictureImg.src = photo(word); }
     el.counter.textContent = (position + 1) + " из " + queue.length;
     el.options.dataset.count = String(picturesCount);
+    el.options.classList.toggle("options--words", wordMode);
     el.options.textContent = "";
 
     shown.forEach(function (item) {
       var button = document.createElement("button");
       button.type = "button";
-      button.className = "pick";
+      button.className = wordMode ? "pick pick--word" : "pick";
       button.dataset.word = item;
-      button.setAttribute("aria-label", item);
 
-      var image = document.createElement("img");
-      image.src = photo(item);
-      image.alt = "";
-      button.appendChild(image);
+      if (wordMode) {
+        button.textContent = item;
+      } else {
+        button.setAttribute("aria-label", item);
+        var image = document.createElement("img");
+        image.src = photo(item);
+        image.alt = "";
+        button.appendChild(image);
+      }
 
       button.addEventListener("click", function () { answer(button, item === word); });
       button.addEventListener("animationend", function () { button.classList.remove("is-wrong"); });
@@ -205,7 +244,7 @@
   }
 
   function downloadCopy() {
-    var data = JSON.stringify({ app: APP_ID, version: 1, picturesCount: picturesCount }, null, 2);
+    var data = JSON.stringify({ app: APP_ID, version: 2, picturesCount: picturesCount, mode: mode }, null, 2);
     var url = URL.createObjectURL(new Blob([data], { type: "application/json" }));
     var link = document.createElement("a");
     link.href = url;
@@ -226,8 +265,10 @@
         data = JSON.parse(reader.result);
       } catch (e) { /* ниже покажем сообщение */ }
       if (data && data.app === APP_ID && isValidCount(data.picturesCount)) {
+        // В копиях первой версии задания нет: тогда оставляем выбранное сейчас
+        if (isValidMode(data.mode)) { setMode(data.mode); }
         setCount(data.picturesCount);
-        el.status.textContent = "Копия загружена. Картинок на экране: " + data.picturesCount + ".";
+        el.status.textContent = "Копия загружена. Задание " + modeName(mode) + ", вариантов на экране: " + data.picturesCount + ".";
       } else {
         el.status.textContent = wrongFile;
       }
@@ -235,6 +276,10 @@
     reader.onerror = function () { el.status.textContent = wrongFile; };
     reader.readAsText(file);
   }
+
+  document.querySelectorAll(".mode__btn").forEach(function (button) {
+    button.addEventListener("click", function () { setMode(button.dataset.mode); });
+  });
 
   document.querySelectorAll(".count__btn").forEach(function (button) {
     button.addEventListener("click", function () { setCount(Number(button.dataset.count)); });
@@ -261,6 +306,7 @@
   });
 
   renderThemes();
+  renderMode();
   renderCount();
 
   // Работа без интернета. Если файл открыт прямо с диска, браузер этого не умеет
