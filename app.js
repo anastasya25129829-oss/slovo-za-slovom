@@ -249,6 +249,13 @@
     el.file.value = "";
   });
 
+  // Долгое нажатие и правый клик на картинке или кнопке не открывают меню телефона
+  document.addEventListener("contextmenu", function (event) {
+    if (event.target.closest && event.target.closest("img, .pick, .theme")) {
+      event.preventDefault();
+    }
+  });
+
   renderThemes();
   renderCount();
 

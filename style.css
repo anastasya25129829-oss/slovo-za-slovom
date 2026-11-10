@@ -32,6 +32,22 @@ button {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Долгое нажатие на iPhone не открывает меню «Поделиться / Сохранить в Фото»:
+   картинка не ловит палец, нажатие уходит кнопке; выделение и перетаскивание выключены */
+button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
 button:focus-visible {
   outline: 4px solid #e0a100;
   outline-offset: 2px;
