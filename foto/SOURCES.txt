@@ -8,16 +8,16 @@
 сковорода — https://cdn.pixabay.com/photo/2014/12/02/14/50/pan-554072_640.jpg
 стакан — https://cdn.pixabay.com/photo/2018/04/07/18/14/empty-glass-3299156_640.png
 кувшин — https://images.unsplash.com/photo-1546896665-08077454c2ae
-футболка — https://cdn.pixabay.com/photo/2012/04/14/16/20/t-shirt-34481_1280.png
-куртка — https://cdn.pixabay.com/photo/2017/10/29/13/17/jacket-2899729_1280.png
-юбка — https://cdn.pixabay.com/photo/2016/01/04/14/40/skirt-1120996_640.png
-пиджак — https://cdn.pixabay.com/photo/2021/12/24/20/17/fashion-6891713_640.png
+футболка — https://cdn.pixabay.com/photo/2016/12/06/09/31/blank-1886008_1280.png, перекрашена из красной в жёлтую
+куртка — https://cdn.pixabay.com/photo/2014/05/07/22/53/jacket-339979_1280.jpg, фон убран
+юбка — https://cdn.pixabay.com/photo/2016/06/21/08/04/skirt-1470613_1280.jpg, фон убран
+пиджак — https://cdn.pixabay.com/photo/2017/08/28/02/58/suit-2688310_1280.jpg, фон убран
 платье — https://cdn.pixabay.com/photo/2016/10/11/01/54/dress-1730320_640.png
 брюки — https://cdn.pixabay.com/photo/2017/08/27/05/33/trousers-2685231_1280.jpg
-рубашка — https://cdn.pixabay.com/photo/2021/05/23/17/42/shirt-6276819_640.png
+рубашка — https://www.pexels.com/photo/3876577/, фон и шляпа убраны
 свитер — https://cdn.pixabay.com/photo/2016/11/23/06/57/isolated-t-shirt-1852114_1280.png
-пальто — https://cdn.pixabay.com/photo/2014/04/03/10/21/coat-310158_960_720.png
-шорты — https://cdn.pixabay.com/photo/2021/11/01/05/59/pants-6759479_960_720.png
+пальто — https://www.pexels.com/photo/18962298/, фон и стойка манекена убраны
+шорты — https://www.pexels.com/photo/39457661/, оставлены только шорты, левая половина отражена зеркально
 хлеб — https://cdn.pixabay.com/photo/2022/01/24/13/56/bread-6963474_1280.png
 молоко — https://cdn.pixabay.com/photo/2017/09/11/23/34/milk-bottle-2740848_1280.jpg
 яблоко — https://cdn.pixabay.com/photo/2016/03/05/21/42/appetite-1239054_1280.jpg
@@ -42,7 +42,7 @@
 машина — https://cdn.pixabay.com/photo/2017/08/25/18/38/isolated-2681017_1280.png
 трамвай — https://cdn.pixabay.com/photo/2020/06/08/06/37/prague-5273285_1280.jpg, фон убран
 поезд — https://cdn.pixabay.com/photo/2020/05/17/08/58/intercity-5180635_1280.jpg, фон убран
-самолёт — https://cdn.pixabay.com/photo/2018/05/09/09/21/polish-airline-3384931_1280.png
+самолёт — https://www.pexels.com/photo/38565459/, самолёт без логотипов, фон и бортовой номер убраны
 велосипед — https://cdn.pixabay.com/photo/2019/03/13/16/12/bicycle-4053192_1280.png
 корабль — https://cdn.pixabay.com/photo/2020/05/21/19/21/ship-5202244_1280.png
 вертолёт — https://cdn.pixabay.com/photo/2020/04/04/15/37/helicopter-5002794_1280.png
