@@ -68,3 +68,49 @@
 рюкзак — https://cdn.pixabay.com/photo/2023/05/30/16/42/backpack-8029117_1280.png
 клей — https://cdn.pixabay.com/photo/2026/08/03/06/46/06-46-19-423_1280.png
 кисточка — https://cdn.pixabay.com/photo/2013/07/12/18/05/paintbrush-152965_1280.png
+огурец — https://cdn.pixabay.com/photo/2017/07/10/02/33/cucumber-2488875_1280.png
+картофель — https://cdn.pixabay.com/photo/2016/09/25/16/37/potato-1694096_1280.jpg
+капуста — https://cdn.pixabay.com/photo/2022/05/12/16/02/cabbage-7191817_1280.jpg, фон убран
+лук — https://cdn.pixabay.com/photo/2016/03/05/19/15/onion-1238338_1280.jpg, фон убран
+свёкла — https://cdn.pixabay.com/photo/2020/05/01/18/40/beet-5118595_1280.png
+перец — https://cdn.pixabay.com/photo/2017/07/03/18/15/pepper-2468510_1280.png
+кабачок — https://cdn.pixabay.com/photo/2020/07/09/15/24/courgettes-5387743_1280.jpg
+чеснок — https://cdn.pixabay.com/photo/2025/05/04/20/42/garlic-9579110_1280.png
+груша — https://cdn.pixabay.com/photo/2016/03/21/02/26/bartlett-pear-1269879_1280.jpg
+апельсин — https://cdn.pixabay.com/photo/2013/07/13/11/29/orange-158258_1280.png
+лимон — https://cdn.pixabay.com/photo/2025/03/26/06/23/lemon-9493742_1280.png
+виноград — https://cdn.pixabay.com/photo/2013/01/08/01/25/table-grapes-74344_1280.jpg
+слива — https://cdn.pixabay.com/photo/2017/01/19/14/32/plum-1992429_1280.png
+персик — https://cdn.pixabay.com/photo/2022/04/08/07/00/peach-7118867_1280.png
+ананас — https://cdn.pixabay.com/photo/2016/12/18/23/16/pineapple-1916996_1280.png
+киви — https://cdn.pixabay.com/photo/2013/01/08/01/43/kiwi-74363_1280.jpg
+волк — https://cdn.pixabay.com/photo/2024/09/07/09/32/wolf-9029431_1280.png
+лиса — https://cdn.pixabay.com/photo/2016/01/04/21/57/fuchs-1121652_1280.png
+медведь — https://cdn.pixabay.com/photo/2018/03/08/15/10/bear-3208852_1280.png
+заяц — https://cdn.pixabay.com/photo/2017/01/27/20/06/isolated-2014109_1280.png
+ёж — https://cdn.pixabay.com/photo/2022/12/14/21/53/hedgehog-7656388_1280.png
+белка — https://cdn.pixabay.com/photo/2018/03/18/17/56/squirrel-3237708_1280.png
+лось — https://cdn.pixabay.com/photo/2017/06/02/19/21/moose-2367114_1280.png
+тигр — https://cdn.pixabay.com/photo/2022/02/19/12/05/animal-7022434_1280.png
+слон — https://cdn.pixabay.com/photo/2017/06/01/07/31/elephant-2362696_1280.png
+жираф — https://cdn.pixabay.com/photo/2012/04/24/13/22/giraffe-40035_1280.png
+кошка — https://cdn.pixabay.com/photo/2016/02/10/16/37/cat-1192026_1280.jpg, фон убран
+собака — https://cdn.pixabay.com/photo/2012/05/07/13/41/dog-48490_1280.png
+корова — https://cdn.pixabay.com/photo/2020/04/01/20/57/isolated-4992733_1280.png
+лошадь — https://cdn.pixabay.com/photo/2021/08/29/11/46/animal-6583065_1280.png
+свинья — https://cdn.pixabay.com/photo/2017/03/16/01/46/pig-2147992_1280.png
+коза — https://cdn.pixabay.com/photo/2012/04/30/10/25/brown-44670_1280.png
+овца — https://cdn.pixabay.com/photo/2024/05/23/13/44/lamb-8783232_1280.png
+кролик — https://cdn.pixabay.com/photo/2017/08/16/21/10/rabbit-2649157_1280.png
+осёл — https://cdn.pixabay.com/photo/2017/12/11/23/04/donkey-3013513_1280.png
+хомяк — https://cdn.pixabay.com/photo/2016/08/16/00/19/hamster-1596819_1280.jpg
+мяч — https://cdn.pixabay.com/photo/2013/07/13/10/51/football-157930_1280.png
+кукла — https://cdn.pixabay.com/photo/2021/02/24/19/41/doll-6047344_1280.png
+мишка — https://cdn.pixabay.com/photo/2017/08/10/23/55/png-2629072_1280.png
+кубики — https://cdn.pixabay.com/photo/2012/04/05/01/51/blocks-25800_1280.png
+пирамидка — https://images.unsplash.com/photo-1629583908828-2cb711a77327, фон убран
+юла — https://cdn.pixabay.com/photo/2016/04/06/15/29/spinning-top-1312052_1280.jpg, фон убран
+неваляшка — https://www.pexels.com/photo/29264750/, фон убран
+матрёшка — https://cdn.pixabay.com/photo/2016/08/30/16/08/matrioska-1631193_1280.jpg
+погремушка — https://images.unsplash.com/photo-1609811645795-f72ea07f47e9, фон убран
+машинка — https://cdn.pixabay.com/photo/2025/04/11/12/21/volkswagen-9528418_1280.png
