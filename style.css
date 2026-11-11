@@ -458,3 +458,96 @@ button:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .pick.is-wrong { animation: dim 0.42s linear; }
 }
+
+/* Три задания: на телефоне одно под другим, на широком экране в ряд */
+.mode-block .mode {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  max-width: 760px;
+}
+
+.mode__btn small {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+/* Варианты появляются все вместе, когда фото загрузились */
+.options { transition: opacity 0.15s ease-out; }
+.options.is-loading { opacity: 0; }
+
+/* Кнопка «Слушать» на плашке */
+.speak { font-size: 1.125rem; }
+
+/* «Назови сам»: картинка крупнее, под ней подсказка и кнопки */
+.screen--name .picture {
+  max-width: 720px;
+  height: min(46vh, 520px);
+}
+
+.name-area {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 12px 16px;
+  padding-bottom: max(16px, env(safe-area-inset-bottom));
+}
+
+.hint-text {
+  margin: 0;
+  min-height: 1.2em;
+  text-align: center;
+  font-size: clamp(2.5rem, min(12vw, 10vh), 5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--muted);
+}
+
+.hint-text.is-full { color: var(--ink); }
+
+.name-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+  max-width: 560px;
+}
+
+.name-buttons .quiet { min-height: 64px; font-size: 1.25rem; }
+.name-buttons .quiet:disabled { opacity: 0.45; cursor: default; }
+
+.solid--ink {
+  background: var(--ink);
+  color: var(--ink-text);
+  border-color: var(--ink);
+  min-height: 64px;
+  font-size: 1.25rem;
+}
+
+/* Ссылка для дома на экране похвалы */
+.home-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 560px;
+}
+
+.home-link__status {
+  margin: 0;
+  min-height: 1.4em;
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+}
+
+@media (max-height: 500px) {
+  .screen--name .picture { height: 60vh; max-width: 420px; }
+  .hint-text { font-size: 2.25rem; }
+  .name-area { padding-top: 6px; gap: 8px; }
+  .name-buttons .quiet, .solid--ink { min-height: 48px; }
+}

@@ -21,7 +21,7 @@
   <section id="screen-home" class="screen">
     <header class="plate plate--home">
       <h1 class="title">Слово за словом</h1>
-      <p class="hint">Выберите задание, сколько вариантов показать, и нажмите тему.</p>
+      <p class="hint">Выберите задание и настройки, потом нажмите тему.</p>
     </header>
 
     <main class="home">
@@ -30,10 +30,11 @@
         <div class="mode" role="group" aria-labelledby="mode-title">
           <button type="button" class="mode__btn" data-mode="picture">Найди картинку</button>
           <button type="button" class="mode__btn" data-mode="word">Картинка — слово</button>
+          <button type="button" class="mode__btn" data-mode="name">Назови сам</button>
         </div>
       </div>
 
-      <div class="count-block">
+      <div class="count-block" id="count-block">
         <h2 class="block-title" id="count-title">Картинок на экране</h2>
         <div class="count" role="group" aria-labelledby="count-title">
           <button type="button" class="count__btn" data-count="2">2</button>
@@ -42,10 +43,18 @@
         </div>
       </div>
 
+      <div class="level-block" id="level-block">
+        <h2 class="block-title" id="level-title">Варианты</h2>
+        <div class="mode" role="group" aria-labelledby="level-title">
+          <button type="button" class="level__btn mode__btn" data-level="easy">Из разных тем<small>легче</small></button>
+          <button type="button" class="level__btn mode__btn" data-level="similar">Из одной темы<small>труднее</small></button>
+        </div>
+      </div>
+
       <div id="themes" class="themes"></div>
 
       <div class="backup">
-        <p class="backup__note">Приложение запоминает только задание и число вариантов. Занятия и ответы не сохраняются.</p>
+        <p class="backup__note">Приложение запоминает только задание, число вариантов и какие они. Занятия и ответы не сохраняются.</p>
         <div class="backup__buttons">
           <button type="button" id="backup-save" class="quiet">Скачать копию данных</button>
           <button type="button" id="backup-load" class="quiet">Загрузить копию</button>
@@ -60,6 +69,7 @@
     <header class="plate plate--task">
       <div class="plate__bar">
         <button type="button" id="to-themes" class="on-plate">К темам</button>
+        <button type="button" id="speak" class="on-plate speak" hidden aria-label="Послушать слово">🔊 Слушать</button>
         <span id="counter" class="counter"></span>
       </div>
       <h1 id="word" class="word"></h1>
@@ -67,6 +77,14 @@
     </header>
 
     <div id="options" class="options"></div>
+
+    <div id="name-area" class="name-area" hidden>
+      <p id="hint-text" class="hint-text" aria-live="polite"></p>
+      <div class="name-buttons">
+        <button type="button" id="hint-btn" class="quiet">Подсказка</button>
+        <button type="button" id="name-next" class="solid solid--ink">Дальше</button>
+      </div>
+    </div>
 
     <div class="task-foot">
       <button type="button" id="skip" class="quiet quiet--wide">Пропустить</button>
@@ -78,6 +96,10 @@
     <div class="praise__buttons">
       <button type="button" id="again" class="solid">Ещё раз</button>
       <button type="button" id="other-theme" class="on-plate on-plate--big">Другая тема</button>
+    </div>
+    <div class="home-link">
+      <button type="button" id="home-link" class="on-plate">Ссылка для дома</button>
+      <p id="home-link-status" class="home-link__status" role="status"></p>
     </div>
   </section>
 
