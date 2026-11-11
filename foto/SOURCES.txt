@@ -84,26 +84,26 @@
 персик — https://cdn.pixabay.com/photo/2022/04/08/07/00/peach-7118867_1280.png
 ананас — https://cdn.pixabay.com/photo/2016/12/18/23/16/pineapple-1916996_1280.png
 киви — https://cdn.pixabay.com/photo/2013/01/08/01/43/kiwi-74363_1280.jpg
-волк — https://cdn.pixabay.com/photo/2020/10/28/14/58/wolf-5693753_1280.png
-лиса — https://cdn.pixabay.com/photo/2016/01/05/06/01/fox-1122021_1280.jpg, фон убран
-медведь — https://cdn.pixabay.com/photo/2018/03/08/15/10/bear-3208852_1280.png
-заяц — https://cdn.pixabay.com/photo/2017/01/27/20/06/isolated-2014109_1280.png
-ёж — https://cdn.pixabay.com/photo/2022/12/14/21/53/hedgehog-7656388_1280.png
-белка — https://cdn.pixabay.com/photo/2018/03/18/17/56/squirrel-3237708_1280.png
-лось — https://cdn.pixabay.com/photo/2024/12/23/16/55/moose-9286982_1280.jpg, фон убран
-тигр — https://cdn.pixabay.com/photo/2022/02/19/12/05/animal-7022434_1280.png
-слон — https://cdn.pixabay.com/photo/2017/06/01/07/31/elephant-2362696_1280.png
-жираф — https://cdn.pixabay.com/photo/2012/04/24/13/22/giraffe-40035_1280.png
-кошка — https://cdn.pixabay.com/photo/2016/02/10/16/37/cat-1192026_1280.jpg, фон убран
-собака — https://cdn.pixabay.com/photo/2014/07/30/18/11/german-shepherd-405503_1280.jpg, фон убран
-корова — https://cdn.pixabay.com/photo/2020/04/01/20/57/isolated-4992733_1280.png
-лошадь — https://cdn.pixabay.com/photo/2021/08/29/11/46/animal-6583065_1280.png
-свинья — https://images.pexels.com/photos/4636980/pexels-photo-4636980.jpeg?auto=compress&cs=tinysrgb&w=1280, фон убран
-коза — https://cdn.pixabay.com/photo/2014/09/24/15/15/billy-goat-459232_1280.jpg, фон убран
-овца — https://cdn.pixabay.com/photo/2021/08/21/18/42/sheep-6563359_1280.jpg, фон убран
-кролик — https://cdn.pixabay.com/photo/2017/08/16/21/10/rabbit-2649157_1280.png
-осёл — https://cdn.pixabay.com/photo/2017/09/08/23/12/donkey-2730565_1280.jpg, фон убран
-хомяк — https://cdn.pixabay.com/photo/2015/11/19/22/52/hamster-1052182_1280.jpg, фон убран
+волк — https://cdn.pixabay.com/photo/2024/09/07/09/32/wolf-9029431_1280.png, рисунок
+лиса — https://cdn.pixabay.com/photo/2024/09/13/16/54/ai-generated-9045439_1280.png, рисунок
+медведь — https://cdn.pixabay.com/photo/2024/02/21/16/38/ai-generated-8588065_1280.jpg, рисунок
+заяц — https://cdn.pixabay.com/photo/2024/11/09/22/12/rabbit-9186765_1280.jpg, рисунок
+ёж — https://cdn.pixabay.com/photo/2026/07/20/04/11/krolestwo_nauki-hedgehog-10385599_1280.png, рисунок
+белка — https://cdn.pixabay.com/photo/2017/12/31/17/33/squirrel-3052846_1280.jpg, рисунок
+лось — https://cdn.pixabay.com/photo/2017/06/02/19/21/moose-2367114_1280.png, рисунок
+тигр — https://cdn.pixabay.com/photo/2022/02/28/20/07/tiger-7039995_1280.png, рисунок
+слон — https://cdn.pixabay.com/photo/2023/02/26/02/55/ai-generated-7814674_1280.jpg, рисунок
+жираф — https://cdn.pixabay.com/photo/2026/01/13/16/47/giraffe-10066711_1280.jpg, рисунок
+кошка — https://cdn.pixabay.com/photo/2022/12/14/21/57/cat-7656410_1280.png, рисунок
+собака — https://cdn.pixabay.com/photo/2024/05/17/19/37/animal-8768942_1280.jpg, рисунок
+корова — https://cdn.pixabay.com/photo/2017/01/19/11/38/cow-1992098_1280.jpg, рисунок
+лошадь — https://cdn.pixabay.com/photo/2024/04/05/14/18/ai-generated-8677499_1280.png, рисунок
+свинья — https://cdn.pixabay.com/photo/2026/08/24/10/25/tanrica-pig-10441820_1280.png, рисунок
+коза — https://cdn.pixabay.com/photo/2024/06/24/22/34/animal-8851317_1280.jpg, рисунок
+овца — https://cdn.pixabay.com/photo/2026/01/14/09/24/sheep-10067782_1280.png, рисунок
+кролик — https://cdn.pixabay.com/photo/2026/02/08/10/38/ridderhof-rabbit-10111150_1280.jpg, рисунок
+осёл — https://cdn.pixabay.com/photo/2017/01/31/22/03/animal-2027601_1280.png, рисунок
+хомяк — https://cdn.pixabay.com/photo/2026/06/27/13/35/bucharena-hamster-10352336_1280.png, рисунок
 мяч — https://cdn.pixabay.com/photo/2013/07/13/10/51/football-157930_1280.png
 кукла — https://cdn.pixabay.com/photo/2021/02/24/19/41/doll-6047344_1280.png
 мишка — https://cdn.pixabay.com/photo/2017/08/10/23/55/png-2629072_1280.png
