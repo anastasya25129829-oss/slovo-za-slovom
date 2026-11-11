@@ -84,33 +84,73 @@
 персик — https://cdn.pixabay.com/photo/2022/04/08/07/00/peach-7118867_1280.png
 ананас — https://cdn.pixabay.com/photo/2016/12/18/23/16/pineapple-1916996_1280.png
 киви — https://cdn.pixabay.com/photo/2013/01/08/01/43/kiwi-74363_1280.jpg
-волк — https://cdn.pixabay.com/photo/2024/09/07/09/32/wolf-9029431_1280.png
-лиса — https://cdn.pixabay.com/photo/2016/01/04/21/57/fuchs-1121652_1280.png
+волк — https://cdn.pixabay.com/photo/2020/10/28/14/58/wolf-5693753_1280.png
+лиса — https://cdn.pixabay.com/photo/2016/01/05/06/01/fox-1122021_1280.jpg, фон убран
 медведь — https://cdn.pixabay.com/photo/2018/03/08/15/10/bear-3208852_1280.png
 заяц — https://cdn.pixabay.com/photo/2017/01/27/20/06/isolated-2014109_1280.png
 ёж — https://cdn.pixabay.com/photo/2022/12/14/21/53/hedgehog-7656388_1280.png
 белка — https://cdn.pixabay.com/photo/2018/03/18/17/56/squirrel-3237708_1280.png
-лось — https://cdn.pixabay.com/photo/2017/06/02/19/21/moose-2367114_1280.png
+лось — https://cdn.pixabay.com/photo/2024/12/23/16/55/moose-9286982_1280.jpg, фон убран
 тигр — https://cdn.pixabay.com/photo/2022/02/19/12/05/animal-7022434_1280.png
 слон — https://cdn.pixabay.com/photo/2017/06/01/07/31/elephant-2362696_1280.png
 жираф — https://cdn.pixabay.com/photo/2012/04/24/13/22/giraffe-40035_1280.png
 кошка — https://cdn.pixabay.com/photo/2016/02/10/16/37/cat-1192026_1280.jpg, фон убран
-собака — https://cdn.pixabay.com/photo/2012/05/07/13/41/dog-48490_1280.png
+собака — https://cdn.pixabay.com/photo/2014/07/30/18/11/german-shepherd-405503_1280.jpg, фон убран
 корова — https://cdn.pixabay.com/photo/2020/04/01/20/57/isolated-4992733_1280.png
 лошадь — https://cdn.pixabay.com/photo/2021/08/29/11/46/animal-6583065_1280.png
-свинья — https://cdn.pixabay.com/photo/2017/03/16/01/46/pig-2147992_1280.png
-коза — https://cdn.pixabay.com/photo/2012/04/30/10/25/brown-44670_1280.png
-овца — https://cdn.pixabay.com/photo/2024/05/23/13/44/lamb-8783232_1280.png
+свинья — https://images.pexels.com/photos/4636980/pexels-photo-4636980.jpeg?auto=compress&cs=tinysrgb&w=1280, фон убран
+коза — https://cdn.pixabay.com/photo/2014/09/24/15/15/billy-goat-459232_1280.jpg, фон убран
+овца — https://cdn.pixabay.com/photo/2021/08/21/18/42/sheep-6563359_1280.jpg, фон убран
 кролик — https://cdn.pixabay.com/photo/2017/08/16/21/10/rabbit-2649157_1280.png
-осёл — https://cdn.pixabay.com/photo/2017/12/11/23/04/donkey-3013513_1280.png
-хомяк — https://cdn.pixabay.com/photo/2016/08/16/00/19/hamster-1596819_1280.jpg
+осёл — https://cdn.pixabay.com/photo/2017/09/08/23/12/donkey-2730565_1280.jpg, фон убран
+хомяк — https://cdn.pixabay.com/photo/2015/11/19/22/52/hamster-1052182_1280.jpg, фон убран
 мяч — https://cdn.pixabay.com/photo/2013/07/13/10/51/football-157930_1280.png
 кукла — https://cdn.pixabay.com/photo/2021/02/24/19/41/doll-6047344_1280.png
 мишка — https://cdn.pixabay.com/photo/2017/08/10/23/55/png-2629072_1280.png
 кубики — https://cdn.pixabay.com/photo/2012/04/05/01/51/blocks-25800_1280.png
-пирамидка — https://images.unsplash.com/photo-1629583908828-2cb711a77327, фон убран
+пирамидка — https://cdn.pixabay.com/photo/2023/08/19/11/34/toy-8200355_1280.jpg, фон убран
 юла — https://cdn.pixabay.com/photo/2016/04/06/15/29/spinning-top-1312052_1280.jpg, фон убран
 неваляшка — https://www.pexels.com/photo/29264750/, фон убран
 матрёшка — https://cdn.pixabay.com/photo/2016/08/30/16/08/matrioska-1631193_1280.jpg
-погремушка — https://images.unsplash.com/photo-1609811645795-f72ea07f47e9, фон убран
+погремушка — https://commons.wikimedia.org/wiki/File:Plastic_baby_rattle_toy_2.jpg (Zeromonk, CC BY-SA 4.0), фон убран
 машинка — https://cdn.pixabay.com/photo/2025/04/11/12/21/volkswagen-9528418_1280.png
+холодильник — https://images.pexels.com/photos/9646742/pexels-photo-9646742.jpeg?auto=compress&cs=tinysrgb&w=1280, фон убран
+телевизор — https://images.pexels.com/photos/9227549/pexels-photo-9227549.jpeg?auto=compress&cs=tinysrgb&w=1280, фон убран
+стиральная машина — https://cdn.pixabay.com/photo/2016/10/31/18/50/washing-machine-1786385_1280.png
+пылесос — https://cdn.pixabay.com/photo/2016/08/19/11/37/vacuum-cleaner-1605068_1280.jpg, фон убран
+утюг — https://cdn.pixabay.com/photo/2011/03/01/03/55/iron-5112_1280.jpg, фон убран
+микроволновка — https://cdn.pixabay.com/photo/2020/05/08/09/23/appliance-5144884_1280.jpg, фон убран
+телефон — https://cdn.pixabay.com/photo/2017/07/04/08/22/iphone-2470313_1280.png
+ноутбук — https://cdn.pixabay.com/photo/2017/08/21/15/37/laptop-2665794_1280.jpg, фон убран
+фен — https://cdn.pixabay.com/photo/2014/03/24/19/01/hairdryer-295616_1280.jpg, фон убран
+миксер — https://images.unsplash.com/photo-1583241475880-083f84372725?fm=jpg&q=80&w=1280, фон убран
+шапка — https://images.unsplash.com/photo-1618354691792-d1d42acfd860
+кепка — https://cdn.pixabay.com/photo/2017/07/21/14/28/hat-2525910_1280.png
+шляпа — https://cdn.pixabay.com/photo/2019/12/14/09/09/mens-hat-4694534_1280.png
+панама — https://images.pexels.com/photos/9604194/pexels-photo-9604194.jpeg?auto=compress&cs=tinysrgb&w=1280, фон убран
+берет — https://images.pexels.com/photos/13960880/pexels-photo-13960880.jpeg?auto=compress&cs=tinysrgb&w=1280, фон убран
+платок — https://cdn.pixabay.com/photo/2016/04/04/21/49/woman-1308309_1280.jpg, фон убран
+ушанка — https://images.pexels.com/photos/11447029/pexels-photo-11447029.jpeg?auto=compress&cs=tinysrgb&w=1280, фон убран
+каска — https://cdn.pixabay.com/photo/2015/08/05/20/00/work-876998_1280.jpg, фон убран
+шлем — https://cdn.pixabay.com/photo/2017/08/01/15/22/white-2566236_1280.jpg, фон убран
+фуражка — https://cdn.pixabay.com/photo/2016/06/18/18/30/military-uniforms-1465449_1280.png
+молоток — https://cdn.pixabay.com/photo/2017/04/04/17/14/claw-hammer-2202195_1280.jpg, фон убран
+отвёртка — https://cdn.pixabay.com/photo/2015/03/01/20/24/screwdriver-655236_1280.jpg, фон убран
+пила — https://cdn.pixabay.com/photo/2012/12/24/08/38/saw-72050_1280.jpg, фон убран
+топор — https://cdn.pixabay.com/photo/2019/07/25/07/18/axe-4361880_1280.jpg, фон убран
+плоскогубцы — https://cdn.pixabay.com/photo/2015/11/07/15/10/pliers-1031962_1280.jpg, фон убран
+гаечный ключ — https://cdn.pixabay.com/photo/2015/03/21/11/36/key-683546_1280.jpg, фон убран
+дрель — https://cdn.pixabay.com/photo/2017/04/18/15/42/akkuschrauber-2239493_1280.jpg, фон убран
+лопата — https://images.pexels.com/photos/16195410/pexels-photo-16195410.jpeg?auto=compress&cs=tinysrgb&w=1280, фон убран
+грабли — https://images.pexels.com/photos/9735037/pexels-photo-9735037.jpeg?auto=compress&cs=tinysrgb&w=1280, фон убран
+рулетка — https://cdn.pixabay.com/photo/2017/04/04/17/21/measuring-tape-2202258_1280.jpg, фон убран
+ботинки — https://cdn.pixabay.com/photo/2013/11/28/12/15/walking-boots-220499_1280.jpg, фон убран
+сапоги — https://cdn.pixabay.com/photo/2014/02/03/02/44/rubber-boots-257104_1280.jpg, фон убран
+туфли — https://cdn.pixabay.com/photo/2013/09/01/18/12/womens-shoes-178162_1280.jpg, фон убран
+кроссовки — https://cdn.pixabay.com/photo/2014/06/18/18/42/running-shoe-371625_1280.jpg, фон убран
+тапочки — https://cdn.pixabay.com/photo/2015/04/03/06/50/slippers-704705_1280.jpg, фон убран
+валенки — https://commons.wikimedia.org/wiki/File:Валенки_новые,_неразношенные.JPG (Andshel, CC BY-SA 4.0), фон убран
+сандалии — https://cdn.pixabay.com/photo/2014/05/30/05/00/shoes-357897_1280.jpg, фон убран
+кеды — https://cdn.pixabay.com/photo/2017/09/12/19/39/shoes-2743420_1280.png
+шлёпанцы — https://cdn.pixabay.com/photo/2020/05/23/09/52/flip-flop-5208875_1280.jpg, фон убран
+босоножки — https://cdn.pixabay.com/photo/2019/07/24/14/55/womens-shoes-4360441_1280.jpg, фон убран
